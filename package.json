@@ -1,6 +1,6 @@
 {
   "name": "create-piso-app",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "lib/index.js",
   "bin": {
     "create-piso-app": "./bin/index.js"
@@ -24,7 +24,8 @@
     "commander": "^12.0.0",
     "download-git-repo": "^3.0.2",
     "inquirer": "^9.2.18",
-    "progress": "^2.0.3"
+    "progress": "^2.0.3",
+    "update-notifier-cjs": "^5.1.6"
   },
   "keywords": [
     "react",
