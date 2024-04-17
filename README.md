@@ -3,5 +3,5 @@
 create ssr app with React, Express and TypeScript
 
 ```ts
-npx create piso-app <app-name>
+yarn create piso-app <app-name>
 ```
