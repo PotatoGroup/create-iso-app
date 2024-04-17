@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "strict": true,
+    "declaration": true,
+    "importHelpers": false,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "lib": [
+      "esnext"
+    ],
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowJs": true,
+    "sourceMap": false,
+    "checkJs": false,
+    "baseUrl": "./",
+    "outDir": "lib",
+    "allowSyntheticDefaultImports": true,
+    "rootDir": "./src",
+    "resolveJsonModule": true
+  },
+  "compileOnSave": true,
+  "exclude": [
+    "lib",
+    "bin"
+  ]
+}

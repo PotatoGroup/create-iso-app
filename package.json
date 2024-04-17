@@ -1,0 +1,29 @@
+{
+  "name": "create-iso-app",
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "bin": {
+    "create-iso-app": "./bin/index.js"
+  },
+  "scripts": {
+    "build": "rm -rf lib & tsc --watch"
+  },
+  "files": [
+    "lib",
+    "bin"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "@types/progress": "^2.0.7",
+    "nodemon": "^3.1.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "chalk": "4.1.2",
+    "commander": "^12.0.0",
+    "download-git-repo": "^3.0.2",
+    "inquirer": "^9.2.18",
+    "progress": "^2.0.3"
+  }
+}
