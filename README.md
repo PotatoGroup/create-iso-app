@@ -1,7 +1,7 @@
-# create-iso-app
+# create-piso-app
 
-cli for create ssr app with template from [react-ssr](https://github.com/ziluo-tang/react-ssr "react-ssr")
+create ssr app with React, Express and TypeScript
 
 ```ts
-npx create iso-app <app-name>
+npx create piso-app <app-name>
 ```

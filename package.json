@@ -1,9 +1,9 @@
 {
-  "name": "create-iso-app",
+  "name": "create-piso-app",
   "version": "0.0.1",
   "main": "lib/index.js",
   "bin": {
-    "create-iso-app": "./bin/index.js"
+    "create-piso-app": "./bin/index.js"
   },
   "scripts": {
     "build": "rm -rf lib & tsc --watch"
