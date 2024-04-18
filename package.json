@@ -1,6 +1,6 @@
 {
   "name": "create-piso-app",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "lib/index.js",
   "bin": {
     "create-piso-app": "./bin/index.js"
