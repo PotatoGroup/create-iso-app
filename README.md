@@ -8,6 +8,7 @@ Create SSR app with React, Express and TypeScript, which supporting:
 - dynamic load：lazy, react-loadable, renderToPipeableStream
 - spiteChunk：code-splitting
 - HMR：hot-reload
+- Auth: JWT
 - and so on
 
 ## Start
