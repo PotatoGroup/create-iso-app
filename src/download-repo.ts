@@ -21,7 +21,7 @@ const downloadRepo = (dest?: string) => {
         );
         reject(err);
       } else {
-        spinner.succeed("download success\n");
+        spinner.succeed(`${chalk.green("Create Success!")}`);
         resolve(dest);
       }
     });
