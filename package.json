@@ -23,7 +23,9 @@
     "chalk": "4.1.2",
     "commander": "^12.0.0",
     "download-git-repo": "^3.0.2",
+    "extra-fs": "^3.2.17",
     "inquirer": "^9.2.18",
+    "ora": "5.4.1",
     "progress": "^2.0.3",
     "update-notifier-cjs": "^5.1.6"
   },

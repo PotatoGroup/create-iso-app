@@ -1,25 +1,19 @@
 import { Command } from "commander";
 import downloadRepo from "./download-repo";
 import packageJson from "../package.json";
-import updateNotifier from "update-notifier-cjs";
+import updatePro from "./updatePro";
 import log from "./log";
-import chalk from "chalk";
+import checkUpdate from "./checkUpdate";
+import compose from "./compose";
+
 const program = new Command();
 
 program
   .description("创建react ssr app")
   .version(packageJson.version)
   .argument("<dest>", "app name directory")
-  .action(async (dest) => {
-    const notifier = updateNotifier({ pkg: packageJson }).notify();
-    await downloadRepo(dest);
-    log(dest);
-    if (notifier.update) {
-      console.log(
-        "\n",
-        chalk.yellowBright(`${notifier.update.latest} 版本已发布，请升级`)
-      );
-    }
+  .action((dest) => {
+    compose(checkUpdate, log, updatePro, downloadRepo)(dest);
   });
 
 program.parse(process.argv);

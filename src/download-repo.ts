@@ -1,6 +1,8 @@
 import download from "download-git-repo";
 import { join } from "path";
 import ProgressBar from "progress";
+import ora from "ora";
+import chalk from "chalk";
 
 const repo = "direct:https://github.com/ziluo-tang/react-ssr.git#main";
 const progress = new ProgressBar("downloading...[:bar]:percent%", {
@@ -8,15 +10,22 @@ const progress = new ProgressBar("downloading...[:bar]:percent%", {
   width: 100,
 });
 
-export default (dest?: string) => {
-  dest = join(process.cwd(), dest ?? "");
+const downloadRepo = (dest?: string) => {
+  const directory = join(process.cwd(), dest ?? "");
+  const spinner = ora(`download template ...`).start();
   return new Promise((resolve, reject) => {
-    download(repo, dest, { clone: true }, (err: Error) => {
+    download(repo, directory, { clone: true }, (err: Error) => {
       if (err) {
+        console.error(
+          chalk.red(`${err} \ntemplate download error, please retry...`)
+        );
         reject(err);
       } else {
-        resolve(true);
+        spinner.succeed("download success\n");
+        resolve(dest);
       }
     });
   });
 };
+
+export default downloadRepo;

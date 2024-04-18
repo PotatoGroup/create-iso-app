@@ -557,6 +557,11 @@ external-editor@^3.1.0:
     iconv-lite "^0.4.24"
     tmp "^0.0.33"
 
+extra-fs@^3.2.17:
+  version "3.2.17"
+  resolved "https://registry.yarnpkg.com/extra-fs/-/extra-fs-3.2.17.tgz#cb4998e40cac808c07522855ce65db4aeff31364"
+  integrity sha512-7uSPDCkfBXC1KmYUGKeD/r4cItY7GROI5Tm79s2rj5JmvdZ/oT9NQWFse3ZVgARjbUUbySr53V6LLpM2yy7ePw==
+
 fd-slicer@~1.1.0:
   version "1.1.0"
   resolved "https://registry.npmjs.org/fd-slicer/-/fd-slicer-1.1.0.tgz"
@@ -1164,7 +1169,7 @@ onetime@^5.1.0:
   dependencies:
     mimic-fn "^2.1.0"
 
-ora@^5.4.1:
+ora@5.4.1, ora@^5.4.1:
   version "5.4.1"
   resolved "https://registry.npmjs.org/ora/-/ora-5.4.1.tgz"
   integrity sha512-5b6Y85tPxZZ7QytO+BQzysW31HJku27cRIlkbAXaNx+BdcVi+LlRFmVXzeF6a7JCwJpyw5c4b+YSVImQIrBpuQ==
